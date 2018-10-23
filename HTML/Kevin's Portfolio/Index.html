@@ -6,23 +6,44 @@ Portfolio Project -->
 
 <!doctype html>
 <html lang="en">
+
   <head>
+    <!-- added meta elements to provide information about the webpage -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- meta elements is inside head element but before the title element -->
     <title> Kevin's Portfolio </title>
+    <!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   </head>
+
   <body>
-<h1> Portfolio for Kevin Yeung </h1>
-<hr />
+    <h1> Portfolio for Kevin Yeung </h1>
+    <hr />
     <!-- <p> Links to my page </p> -->
     <nav>
-    <p><a href="projects.html">Projects</a></p>
-               <p><a href="contact.html">Contact Me</a></p>
-               <p><a href="testimonials.html">Testimonials</a></p>
-      </nav>
-               <hr />
+      <!-- adding hr style is an inline style, down below adds a dotted red line -->
+      <hr style="width: 75%; border: 3px solid blueviolet;" />
+      <p><a href="Index.html">Projects</a></p>
+      <p><a href="Contact.html">Contact Me</a></p>
+      <p><a href="Testimonials.html">Testimonials</a></p>
+      <!-- hr style adds the line, if you write 50%, it will automatically give you half the length of the line and it is centered horonzontally by default -->
+      <hr style="width: 75%; border: 3px solid blueviolet;" />
+    </nav>
+    <hr />
     <h2><i> About Me </i></h2>
-    <p> Hi! My name is Kevin Yeung and I am a New York City native. I currently serving an apprentice with Software Guild in hopes of learning the skills necessary in order to become a professional software developer.  </p>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <figure><img src="Images/profilePic.png" alt=Me! width=450 class="img-thumbnail" /></figure>
+        </div>
+        <div class="col-lg-9">
+          <p> Hi! My name is Kevin Yeung and I am a New York City native. I currently serving an apprentice with Software Guild in hopes of learning the skills necessary in order to become a professional software developer. </p>
+        </div>
+      </div>
+    </div>
     <article id="experience">
-    <h2><i> Past Experiences </i></h2>
+      <h2><i> Past Experiences </i></h2>
       <img src="https://www.flightclub.com/media/wysiwyg/GP2A7620-sm.jpg" alt=FlightClub width=350 />
       <table>
         <caption>Employment History</caption>
@@ -31,7 +52,7 @@ Portfolio Project -->
           <th>Title</th>
           <th>Company</th>
         </tr>
-          <tr>
+        <tr>
           <td>2018-Present</td>
           <td>Apprentice</td>
           <td>The Software Guild</td>
@@ -46,49 +67,50 @@ Portfolio Project -->
           <td>Drop Shipper</td>
           <td>Ebay</td>
         </tr>
-         <tr>
+        <tr>
           <td>2015-2016</td>
           <td>Real Estate Broker</td>
           <td>Christie's Property Group</td>
         </tr>
         <tr>
-        <td>2010-2014</td>
-        <td>Student</td>
-        <td>Stony Brook University</td>
+          <td>2010-2014</td>
+          <td>Student</td>
+          <td>Stony Brook University</td>
         </tr>
-        </table
+      </table <!-- I graduated from Stony Brook University with a Bachelor's on the Dean's List. As for work, I worked closely with streetwear and high fashion and found a niche in buying and reselling high ticket items in the industry. -->
 
-  <!-- I graduated from Stony Brook University with a Bachelor's on the Dean's List. As for work, I worked closely with streetwear and high fashion and found a niche in buying and reselling high ticket items in the industry. -->
+    </article>
+    <article id="hobbies">
+      <h2><i> Hobbies </i></h2>
+      <img src="https://s6.favim.com/orig/65/camera-canon-photography-Favim.com-590705.jpg" alt=Canon photography width=350 />
 
-        </article>
-        <article id="hobbies">
-    <h2><i> Hobbies </i></h2>
-          <img src="https://s6.favim.com/orig/65/camera-canon-photography-Favim.com-590705.jpg" alt=Canon photography width=350 />
-
-<ul>
+      <ul>
         <li>Photography</li>
         <li>Fitness</li>
         <li>Video Games</li>
         <ul style=list-style-type: square;>
-            <li>Fortnite</li>
-            <li>MapleStory</li>
-            <li>Final Fantasy</li>
-        </>
-    </ul>
-          </ul>
+          <li>Fortnite</li>
+          <li>MapleStory</li>
+          <li>Final Fantasy</li>
+          </>
+        </ul>
+      </ul>
 
 
-  <!--  <p> I am an avid gamer and amateur photographer. I also am very big on health and fitness. I love working out and strive to always reach my strength goals.  </p> -->
+      <!--  <p> I am an avid gamer and amateur photographer. I also am very big on health and fitness. I love working out and strive to always reach my strength goals.  </p> -->
 
-        </article>
+    </article>
     <hr />
 
-
-
+    <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
   </body>
   <footer>
     <hr />
     <p>&copy; 2018 Kevin Yeung. All rights reserved.</p>
   </footer>
+
 </html>
