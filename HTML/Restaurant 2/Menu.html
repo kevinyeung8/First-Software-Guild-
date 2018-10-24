@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- google web front inserted, there is a customized size where you can call -->
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
+    <!--referencing css stylesheet!-->
+    <link href="restaurantStyles.css" rel="stylesheet" type="text/css">
 
     <style>
       center {
@@ -23,16 +25,52 @@
       body {
         font-family: 'Oswald', sans-serif;
       }
+
+      .navLink {
+        text-align: center;
+        font-weight: bold;
+      }
+
+      /* Styles the anchor links in the nav bar when they have been visited */
+      nav a:visited {
+        color: yellow;
+      }
+
+      /* Styles the anchor links in the nav bar when the pointer is hovering over it */
+      nav a:hover {
+        font-weight: bold;
+      }
+
+      /* Styles the anchor links in the nav bar when they are being activated */
+
+      nav a:active {
+        text-decoration: none;
+      }
+
+      h5 {
+        text-align: center;
+        font-weight: bold;
+      }
+
+      .marginTop {
+        margin-top: 100px;
+      }
+
+      .beverages {
+        text-align: center;
+      }
+
     </style>
+
 
   </head>
 
 
-  <body>
-    <h1>
-      <center> <img src=Images/Logo.png />
+  <body style="background-color:yellow;">
+    <h1 style="margin:0">
+      <center> <img src=Images/Logo.png  />
     </h1>
-    <header class="jumbotron">
+    <header class="jumbotron" style="margin:0">
       <nav class="row">
 
         <!-- <h2 class="font-italic">Web Developer Extraordinaire</h2>
@@ -40,85 +78,138 @@
         <a href="Index.html" class="col-4 navLink">Home</a>
         <a href="Menu.html" class="col-4 navLink">Menu</a>
         <a href="ContactMe.html" class="col-4 navLink">Contact Us</a>
-        <hr>
+        <!-- <hr> -->
       </nav>
     </header>
+
     <hr>
-    <table width=100%>
-      <tr>
-        <th>Two Karet Burger</th>
-        <th>I've Created a Muenster Burger</th>
-        <th>Foot Feta-ish Burger</th>
-      </tr>
-      <tr>
-        <td>Our signature burger topped with </td>
-        <td>This monster of a burger is a double decker patty</td>
-        <td>Mediterranean inspired lamb burger served with </td>
-      </tr>
-      <tr>
-        <td>Caramelized Onion and cheddar cheese. </td>
-        <td>Topped with grilled mushrooms, hickory smoked</td>
-        <td>Tomato, cucumber, grilled red onions with </td>
-      </tr>
-      <tr>
-        <td>Served with 2 carrots on the side!</td>
-        <td>Bacon and melted muenster cheese.</td>
-        <td>Sprinkled feta cheese on top.</td>
-      </tr>
-      <tr>
-        <td><i>$8.99</td>
-        <td><i>$9.49</td>
-        <td><i>$10.99</td>
-      </tr>
+    <section class="row marginTop">
+      <article class="col-4">
+        <h5 class="menuItem">Two Karet Burger</h5>
+      </article>
+
+      <article class="col-4">
+        <h5 class="menuItem">I've Created a Muenster Burger</h5>
+      </article>
+
+      <article class="col-4">
+        <h5 class="menuItem">Foot Feta-ish Burger</h5>
+      </article>
+    </section>
+
+    <section class="row">
+      <article class="col-4">
+        <p>Our signature burger topped with Caramelized Onion and cheddar cheese. Served with 2 carrots on the side!</p>
+      </article>
+
+      <article class="col-4">
+        <p>This monster of a burger is a double decker patty topped with grilled mushrooms, hickory smoked bacon and melted muenster cheese. Yum!</p>
+      </article>
+
+      <article class="col-4">
+        <p>Mediterranean inspired lamb burger served with tomato, cucumber, grilled red onions with sprinkled feta cheese on top. </p>
+      </article>
+    </section>
+
+    <section class="row">
+      <article class="col-4">
+        <h5>$8.99</h5>
+      </article>
+
+      <article class="col-4">
+        <h5>$9.49</h5>
+      </article>
+
+      <article class="col-4">
+        <h5>$10.99</h5>
+      </article>
+    </section>
+
+    <section class="row marginTop">
+      <article class="col-4">
+        <h5 class="menuItem">New Bacon-ings</h5>
+      </article>
+
+      <article class="col-4">
+        <h5 class="menuItem">Mission A-Corn-Plished Burger</h5>
+      </article>
+
+      <article class="col-4">
+        <h5 class="menuItem">BURGER OF THE DAY</h5>
+      </article>
+    </section>
+
+    <section class="row">
+      <article class="col-4">
+        <p>Our famous pulled pork burger with 4 juicy slices of BBQ Bacon and a fried egg on top!</p>
+      </article>
+
+      <article class="col-4">
+        <p>This Fiery burger is topped with fire-roasted corn, chipotle adobo, cream cheese, cotija cheese, scallions, mayo, and crumbled hot cheetos!</p>
+      </article>
+
+      <article class="col-4">
+        <p>Close your eyes, and prepare for the best burger you will have ever tasted!Please alert the staff if you have any food allergies</p>
+      </article>
+    </section>
+
+    <section class="row">
+      <article class="col-4">
+        <h5>$10.49</h5>
+      </article>
+
+      <article class="col-4">
+        <h5>$11.49</h5>
+      </article>
+
+      <article class="col-4">
+        <h5>$14.99</h5>
+      </article>
+    </section>
+
+    <br>
+    <br>
+
+
+    <table class="table beverages table-striped">
+      <thead>
+        <tr>
+          <th colspan="1">Beverages</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Root Beer</td>
+          <td>$3.00</td>
+        </tr>
+        <tr>
+          <td>Bottled Water</td>
+          <td>$1.25</td>
+        </tr>
+        <tr>
+          <td>Lemonade</td>
+          <td>$1.00</td>
+        </tr>
+        <tr>
+          <td>Iced Tea</td>
+          <td>$1.25</td>
+        </tr>
+      </tbody>
     </table>
-    <br>
-    <br>
-    <br>
-    <br>
-    <table width=110%>
-      <tr>
-        <th>New Bacon-ings</th>
-        <th>Mission A-Corn-Plished Burger</th>
-        <th>BURGER OF THE DAY</th>
-      </tr>
-      <tr>
-        <td>Our famous pulled pork burger</td>
-        <td>This Fiery burger is topped with </td>
-        <td>Close your eyes, and prepare for the best burger </td>
-      </tr>
-      <tr>
-        <td>With 4 slices of BBQ Bacon </td>
-        <td>Fire-roasted corn, chipotle adobo, cream cheese, </td>
-        <td>You will have ever tasted! </td>
-      </tr>
-      <tr>
-        <td>With a fried egg on top!</td>
-        <td>Cotija cheese, scallions, mayo, and hot cheetos!</td>
-        <td>**Please alert the staff if you have any food allergies*</td>
-      </tr>
-      <tr>
-        <td><i>$10.49</td>
-        <td><i>$11.49</td>
-        <td><i>$14.99</td>
-      </tr>
-    </table>
-    <div>
-      <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   </body>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <hr>
-  <p> 155 East 5st Street
-    <br>
-    New York, NY 10010
-    <br>
-    1(212)-433-0402
+  <footer>
+    <center>
+      <hr>
+      <p> 155 East 5st Street
+        <br>
+        New York, NY 10010
+        <br>
+        1(212)-433-0402
+  </footer>
 
 </html>

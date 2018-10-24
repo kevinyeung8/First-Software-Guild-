@@ -1,3 +1,31 @@
+center {
+  background-color: yellow;
+}
+
+.jumbotron {
+  background-color: #e60000;
+}
+
 body {
-    background-color: lightblue;
+  font-family: 'Oswald', sans-serif;
+}
+
+.navLink {
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Styles the anchor links in the nav bar when they have been visited */
+nav a:visited {
+  color: green;
+}
+
+/* Styles the anchor links in the nav bar when the pointer is hovering over it */
+nav a:hover {
+  font-weight: bold;
+}
+
+/* Styles the anchor links in the nav bar when they are being activated */
+nav a:active {
+  text-decoration: none;
 }
